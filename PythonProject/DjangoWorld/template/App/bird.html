@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flamingo Bird Information</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Bird.css' %}" />
+</head>
+<body>
+   <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">Bird</a>
+      <a href="#">Contact</a>
+  </nav>
+   <div class="header">
+      <h1>Flamingo</h1>
+  </div>
+  <div class="main">
+      <div class="card">
+          <img src="{% static 'flamingo1.jpg' %}" alt="Flamingo" >
+          <h3>{{name}}</h3>
+          <p><strong>Biological Name:</strong>{{bird.biological_name}}</p>
+          <p><strong>Habitat:</strong>{{bird.habitat}}</p>
+          <p><strong>Food:</strong>{{bird.food}}</p>
+          <p><strong>Color:</strong>{{bird.color}}</p>
+          <p><strong>Lifespan:</strong>{{bird.lifespan}}</p>
+      </div>
+  </div>
+<footer>
+    <p>Designed by me</p>
+</footer>
+</body>
+</html>

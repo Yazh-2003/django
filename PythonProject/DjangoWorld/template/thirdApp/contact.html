@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'thirdApp.css' %}" />
+</head>
+<body>
+<a href="{% url 'home' %}">Contact</a>
+<h1>{{info.name}}</h1>
+<h2>{{info.email}}</h2>
+
+</body>
+</html>

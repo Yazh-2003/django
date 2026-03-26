@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DailyExpenseTracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+<h1>Daily Expense Tracker</h1>
+<table class="table table-bordered table-dark text-center table-hover p-5">
+  <thead>
+  <tr>
+    <th>Amount</th>
+    <th>Category</th>
+    <th>PaymentMode</th>
+    <th>Date</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for expense in expenses %}
+  <tr>
+    <td>{{expense.amount}}</td>
+    <td>{{expense.category}}</td>
+    <td>{{expense.paymentMode}}</td>
+    <td>{{expense.date}}</td>
+    <td><button><a href="#">Update</a></button></td>
+    <td><button><a href="#">Delete</a></button></td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>
